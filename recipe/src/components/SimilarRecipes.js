@@ -9,7 +9,7 @@ function SimilarRecipes({id}) {
   
   useEffect(() => {
     getSimilar();
-  }, []);
+  }, [id]);
 
 
   const responsive = {

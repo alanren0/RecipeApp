@@ -18,7 +18,6 @@ function Search({setRecipes, cuisines, diets}) {
     if (cuisinesStr) {
       params["cuisine"] = cuisinesStr;
     }
-
     if (dietsStr) {
       params["diet"] = dietsStr;
     }

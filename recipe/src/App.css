@@ -36,7 +36,7 @@ a, a:hover, a:focus, a:active {
 }
 
 .recipe-background {
-  background-color: rgb(255, 226, 215);
+  background-color: rgb(255, 255, 255);
   padding: 10px;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -53,7 +53,7 @@ a, a:hover, a:focus, a:active {
 }
 
 .recipe-background-large {
-  background-color: rgb(255, 226, 215);
+  background-color: rgb(255, 255, 255);
   padding: 10px;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -66,7 +66,7 @@ a, a:hover, a:focus, a:active {
   width: 100px;
   border-radius: 20px;
   padding: 10px;
-  background-color: rgb(255, 215, 201);
+  background-color: rgb(255, 255, 255);
   font-size: 40px;
   margin-bottom: 20px;
 }

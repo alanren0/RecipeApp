@@ -14,7 +14,7 @@ function SimilarRecipes({id}) {
 
   const responsive = {
     desktop: {
-      breakpoint: { max: 3000, min: 1024 },
+      breakpoint: { max: 1400, min: 800 },
       items: 4,
       slidesToSlide: 1
     }

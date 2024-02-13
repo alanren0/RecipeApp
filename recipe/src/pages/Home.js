@@ -4,6 +4,7 @@ import Cuisine from "../components/filters/Cuisine";
 import RecipeList from "../components/RecipeList";
 import Diet from "../components/filters/Diet";
 import Search from "../components/Search";
+import { Link } from "react-router-dom";
 
 function Home() {
 
@@ -26,10 +27,19 @@ function Home() {
 
 
   return (
-    <>
+    <div>
+      <div className="top">
+        <div className="home-button">
+          <Link to="/">Home</Link>
+        </div>
+        <div className="search">
+          <Search setRecipes={setRecipes} cuisines={cuisines} diets={diets}/>
+        </div>
+      </div>
+
       <div className="page-separator">
         <div className="filters">
-          <Search setRecipes={setRecipes} cuisines={cuisines} diets={diets}/>
+          
           <Cuisine setCuisines={setCuisines}/>
           <Diet setDiets={setDiets}/>
         </div>
@@ -49,7 +59,7 @@ function Home() {
       <footer>
         Data gathered from <a href="https://spoonacular.com/food-api">https://spoonacular.com/food-api</a>
       </footer>
-    </>
+    </div>
   )
 }
 

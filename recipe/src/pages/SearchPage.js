@@ -66,17 +66,21 @@ function SearchPage() {
 
   return (
     <div>
+      <div className="top">
+        <div className="home-button">
+          <Link to="/">Home</Link>
+        </div>
+        <div className="search">
+          <Search setRecipes={setRecipes} cuisines={cuisines} diets={diets}/>
+        </div>
+      </div>
+
       <div className="page-separator">
-        <div>
-          <div className="home-button">
-            <Link to="/">Home</Link>
-          </div>
           <div className="filters">
-            <Search setRecipes={setRecipes} cuisines={cuisines} diets={diets}/>
+            
             <Cuisine setCuisines={setCuisines}/>
             <Diet setDiets={setDiets}/>
           </div>
-        </div>
       
         <div>
           <div className="page-buttons">
